@@ -1,38 +1,308 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(246, 243, 243);
+  /* margin-bottom: 100px; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.placetag{
+  background-color: rgba(30, 183, 132);
+  font-size: 1.3rem;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.NavBar{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  height: 13%;
+  background-color: rgba(30, 183, 132);
+  z-index: 5;
+  position: fixed;
+  top: 0%;
+  /* padding-bottom: 10px; */
+}
+.NavTop{
+  padding: 12px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 10px; 
+    padding-bottom: 3px;
+    background-color: rgba(30, 183, 132);
+}
+.icon{
+  width: 50px;
+  width: 24px !important;
+  height: 25px !important;
+  background-color: rgba(30, 183, 132);
+}
+.location{
+  /* margin-right: 100px; */
+  padding-left: 20px;
+  padding-right: 10px;
   color: white;
+  background-color: rgba(30, 183, 132, 0.91);
+}
+.bell{
+  padding-left: 35px;
+  color: white;
+  background-color: rgba(30, 183, 132, 0.91);
+}
+.cart{
+  color: white;
+  padding-left: 10px;
+  background-color: rgba(30, 183, 132, 0.91);
+}
+.NavBottom{
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: flex-start;
+      background-color: rgba(30, 183, 132, 0.91);
+      
+}
+.Search-bar{
+  /* font-size: large; */
+  padding-top: 0px;
+  padding-left: 27px;
+  display: flex;
+  background-color: rgba(30, 183, 132, 0.91);
+  
+}
+.Icon{
+  /* color: white; */
+  display: flexbox;
+  background-color: white;
+  border-color: white;
+  width: 24px !important;
+  height: 45px !important;
+  border: 0ch;
+  outline: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-left: 10px;
+  color: rgba(30, 183, 132, 0.91);
+  
+
+}
+.micro{
+  color: white;
+  width: 24px !important;
+  height: 25px !important;
+  padding-top: 10px;
+  background-color: rgba(30, 183, 132, 0.91);
+  padding-right: 25px;
+}
+.bar{
+  background-color: white;
+  border-color: white;
+  width: 250px;
+  height: 45px;
+  outline: none;
+  border: 0ch;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  
+}
+.searchIcon{
+  width: 40px;
+  height: 45px;
+  display: flexbox;
+  background-color: white;
+  border-color: white;
+  border: 0ch;
+  outline: none;
+  
+}
+.searchIcon{
+  border: none;
+  outline: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+}
+.place{
+  margin: 0px;
+  width: 220px;
+  height: 35px;
+  outline: auto;
+  outline-color: white;
+  background-color: rgba(30, 183, 132, 0.91);
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 10px;
+  /* font-size: 1.05rem; */
+  padding-left: 5px;
+}
+.Banner{
+  margin-top: 120px;
+      height: 25%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      
+}
+.slideImage{
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  
+}
+.Banner-image{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  padding-left: 50px;
+  justify-content: center;
+}
+.payingTab{
+  width: 100%;
+  margin: 10px;
+  margin-top: 35px;
+  display: grid;  
+  /* border-style: outset;
+  border-color: rgba(30, 183, 132, 0.91); */
+  border-radius: 10px;
+  margin-bottom: 40px;
+  
+  
+}
+.IconTab{
+  /* height: 100vh; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 25px;
+    padding-top: 15px ;
+    /* outline: auto; */
+    /* outline-color: white; */
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 2px 2px 1px #e0e0e0;
+    border-radius: 10px;
+}
+.icon-size{
+  /* display: flex; */
+  width: 35x !important;
+  height: 35px !important;
+  /* width: 100px; */
+  color: rgba(30, 183, 132, 0.91);
+
+}
+.icon-size-bottom{
+  width: 35x !important;
+    height: 35px !important;
+    /* width: 100px; */
+    color: rgba(1, 127, 85, 0.91);
+    background-color: #ffffff;
+}
+.ICON{
+  /* padding: 3px; */
+  border-color: rgb(250, 203, 203);
+  padding-top: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(30, 183, 132, 0.91);
+  background-color: #ffffff;
+}
+.BottomIcon{
+  color: rgba(1, 127, 85, 0.91);
+  background-color: #ffffff;
+}
+.BottomNav{
+  /* padding-top: 10px; */
+  width: 100%;
+  height: 8.5%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color: #ffffff;
+  z-index: 100;
+  position: fixed;
+  bottom: 0%;
+  padding-bottom: 0px;
+  border-top: 1px solid #BFBFBF;
+  box-shadow: 0px 10px 10px #e0e0e0;
+}
+.Bottomnav{
+    
+}
+.para{
+  font-size: small;
+}
+p{
+  margin-top: 0px;
+  margin-bottom: 8%;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
+.title-tag{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  /* background-color: black; */
+  padding-top: 10px;
+  padding-left: 50px;
+  background-color: rgba(158, 215, 196, 0.91);
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.Products{
+  margin-top: 30px;
 }
+.consultancyName{
+  display: flex;
+  padding-left: 120px;
+  padding-top: 5px;
+}
+.title{
+  background-color: rgba(158, 215, 196, 0.91);
+}
+.Service{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  overflow: scroll;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.ServiceProduct{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 120px;
+    height: 170px;
+    background-color: #ffffff;
+  /* border-top: 1px solid #BFBFBF; */
+    box-shadow: 5px 5px 5px #e0e0e0;
+    border-radius: 10px;
+}
+.NameTag{
+  margin: 7px;
+  width: 100px;
+  height: 100px;
+  /* background-color: black; */
+}
+.Character{
+  font-size: 60px;
+  padding: 13px;
+  padding-left: 35px;
+}
+.ServiceName{
+  /* overflow: hidden; */
+  padding-left: 8px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+hr{
+  display: flex;
+  border-top: 2px solid;
+  color:rgb(10, 133, 92) ;
+  margin-top: 5%;
+  width: 75%;
+  margin-left: 65px;
+
 }
